@@ -4,19 +4,9 @@ Code repository for the paper "Crop classification from satellite image sequence
 ![](./graphics/PSETAE.png)
 
 
-[Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Garnot_Satellite_Image_Time_Series_Classification_With_Pixel-Set_Encoders_and_Temporal_CVPR_2020_paper.html) abstract:
+[Paper](https://ieeexplore.ieee.org/document/9827752) abstract:
 
-*Satellite image time series, bolstered by their growing availability, are at the forefront of an extensive effort towards 
-automated Earth monitoring by international institutions. In particular, large-scale control of agricultural parcels is 
-an issue of major political and economic importance. In this regard, hybrid convolutional-recurrent neural architectures 
-have shown promising results for the automated classification of satellite image time series. We propose 
-an alternative approach in which the convolutional layers are advantageously replaced with encoders operating 
-on unordered sets of pixels to exploit the typically coarse resolution of publicly available satellite images. 
-We also propose to extract temporal features using a bespoke neural architecture based on self-attention 
-instead of recurrent networks. We demonstrate experimentally that our method not only outperforms previous 
-state-of-the-art approaches in terms of precision, but also significantly decreases processing time and memory 
-requirements. Lastly, we release a large open-access annotated dataset as a benchmark 
-for future work on satellite image time series.*
+*In recent years the availability of satellite image observations of Earth has been increasing, creating opportunities for automated methods to be applied in tasks with significant economic importance, such as agricultural parcel crop classifica- tion. Designing and implementing automated methods that can efficiently interpret satellite images and handle their temporal nature poses a significant challenge in remote sensing. Deep learning models have proven to be able to leverage these type of data, taking into consideration both their spatial as well as temporal nature. Building on a state-of-the-art architecture using self-attention to classify crops captured in satellite images time series, we introduce two changes in order to better capture the crop phenology. Specifically, the calculation of the self-attention Query is performed by a Temporal Convolutional Network (TCN), while the TCN output is also taken under consideration for the final classification. Moreover, we utilize the temporal differences between consecutive time steps to create an auxiliary time series that can be employed alongside the original time series, in a two-stream architecture, that proves to be capable of further improving performance. We also conduct a detailed ablation study to assess the impact of these contributions. The proposed model was able to produce results that exceed the state-of-the-art on the publicly available Sentinel2-Agri dataset.*
 
 
 ## [UPDATES]
