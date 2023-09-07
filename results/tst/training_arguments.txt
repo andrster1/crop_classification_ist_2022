@@ -1,0 +1,48 @@
+{
+  "dataset_folder": "/home/andrster/workplace/datasets/french_satelite_dataset/S2-2017-T31TFM-PixelSet",
+  "res_dir": "results/tst",
+  "num_workers": 8,
+  "rdm_seed": 1,
+  "device": "cuda",
+  "display_step": 50,
+  "kfold": 5,
+  "epochs": 300,
+  "batch_size": 128,
+  "lr": 0.001,
+  "gamma": 1,
+  "npixel": 64,
+  "input_dim": 10,
+  "mlp1": [
+    10,
+    32,
+    64
+  ],
+  "pooling": "mean_std",
+  "mlp2": [
+    132,
+    128
+  ],
+  "geomfeat": 1,
+  "n_head": 16,
+  "d_k": 8,
+  "mlp3": [
+    384,
+    256,
+    128
+  ],
+  "T": 1000,
+  "lms": 24,
+  "dropout": 0.2,
+  "d_model": 256,
+  "num_classes": 20,
+  "mlp4": [
+    768,
+    384,
+    256,
+    128,
+    64,
+    32,
+    20
+  ],
+  "preload": false
+}
