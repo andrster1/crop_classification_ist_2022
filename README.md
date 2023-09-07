@@ -1,7 +1,7 @@
 Code repository for the paper "Crop classification from satellite image sequences using a two-stream network with temporal self-attention"
 
 
-![](./graphics/PSETAE.png)
+![](./graphics/tcn_tae.png)
 
 
 [Paper](https://ieeexplore.ieee.org/document/9827752) abstract:
