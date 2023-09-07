@@ -1,9 +1,5 @@
-# Satellite Image Time Series Classification with Pixel-Set Encoders and Temporal Self-Attention (CVPR 2020, Oral)
+Code repository for the paper "Crop classification from satellite image sequences using a two-stream network with temporal self-attention"
 
-
-PyTorch implementation of the model presented in 
-["Satellite Image Time Series Classification with Pixel-Set Encoders 
-and Temporal Self-Attention"](https://openaccess.thecvf.com/content_CVPR_2020/html/Garnot_Satellite_Image_Time_Series_Classification_With_Pixel-Set_Encoders_and_Temporal_CVPR_2020_paper.html) published ar CVPR 2020.
 
 ![](./graphics/PSETAE.png)
 
