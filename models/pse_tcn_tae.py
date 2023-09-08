@@ -39,14 +39,11 @@ class PseTCNTae(nn.Module):
             diff(tuple): ((Pixel-Set, Pixel-Mask), Extra-features)
             date: dates for each timestep that were captured
         """
-        sz_b = input[0][0].size(0)
         out = self.spatial_encoder([[input[0][0], input[0][1]], input[1]])
         out = self.temporal_encoder(out)
 
         out_diff = self.diff_spatial_encoder([[diff[0][0], diff[0][1]], diff[1]])
-        diff_pos = torch.arange(1, 24).to(out_diff.device)[None]
-        diff_pos = diff_pos.repeat(sz_b, 1)
-        out_diff = self.diff_temporal_encoder(out_diff, diff_pos)
+        out_diff = self.diff_temporal_encoder(out_diff)
 
         out_concated = torch.cat([out, out_diff], -1)
         out_concated = F.relu(self.outlayernorm(self.dropout(out_concated)))

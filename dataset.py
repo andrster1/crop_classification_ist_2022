@@ -1,3 +1,7 @@
+"""
+Heavily inspired by Vivien Sainte Fare Garnot (https://github.com/VSainteuf/pytorch-psetae/tree/master)
+"""
+
 import datetime as dt
 import json
 import os
@@ -144,7 +148,7 @@ class PixelSetDataDifferences(data.Dataset):
             data = (data, ef)
             dif_data = ((x_dif, Tensor(x_dif_mask)), ef_dif)
 
-        return data, dif_data, torch.from_numpy(self.date_positions), torch.from_numpy(np.array(y, dtype=int))
+        return data, dif_data, torch.from_numpy(np.array(y, dtype=int))
 
 
 def parse(date):

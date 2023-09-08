@@ -1,3 +1,7 @@
+"""
+credits to Vivien Sainte Fare Garnot (https://github.com/VSainteuf/pytorch-psetae/tree/master)
+"""
+
 import argparse
 import json
 import os
@@ -224,8 +228,8 @@ def main(config):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     # Set-up parameters
-    parser.add_argument('--dataset_folder', default='/home/andrster/workplace/datasets/french_satelite_dataset/S2-2017-T31TFM-PixelSet', type=str,
-                        help='Path to the folder where the results are saved.')
+    parser.add_argument('--dataset_folder', default='', type=str,
+                        help='Path to the folder where the dataset is located.')
     parser.add_argument('--res_dir', default='results/tst', help='Path to the folder where the results should be stored')
     parser.add_argument('--num_workers', default=8, type=int, help='Number of data loading workers')
     parser.add_argument('--rdm_seed', default=1, type=int, help='Random seed')
